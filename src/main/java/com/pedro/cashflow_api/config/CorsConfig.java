@@ -11,12 +11,7 @@ public class CorsConfig implements WebMvcConfigurer {
     public void addCorsMappings(CorsRegistry registry) {
         // Aplica a todos os endpoints da API
         registry.addMapping("/**")
-                .allowedOrigins(
-                        "https://cashflow-api-3zn5.onrender.com",
-                        "http://127.0.0.1:5000",
-                        "http://localhost:5500",
-                        "http://127.0.0.1:5500"
-                )
+                .allowedOrigins("https://pedromealves.github.io")
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                 .allowedHeaders("*")
                 .allowCredentials(true);
