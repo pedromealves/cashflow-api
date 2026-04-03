@@ -12,7 +12,7 @@ public class CorsConfig implements WebMvcConfigurer {
         // Aplica a todos os endpoints da API
         registry.addMapping("/**")
                 .allowedOrigins(
-                        "http://localhost:5000",
+                        "https://cashflow-api-3zn5.onrender.com",
                         "http://127.0.0.1:5000",
                         "http://localhost:5500",
                         "http://127.0.0.1:5500"
